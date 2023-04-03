@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', cityWeather)
 
+const form = document.querySelector("#weather-form")
+form.addEventListener('submit', cityWeather)
+
 function weatherDataFetch(city){
     let key = '77f97b598769bf8861004c74e30ebbba';
     let req = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`
@@ -24,6 +27,13 @@ function drawWeather(data){
     document.querySelector('#temp').innerHTML = `${temp}&deg;`
 }
 
-function cityWeather() {
-    weatherDataFetch('Tallinn');
+function cityWeather(event){
+    if(document.querySelector('#city').value !== ''){
+        city = document.querySelector('#city').value
+        document.querySelector('#city').value = ''
+    } else {
+        city='Tallinn'
+    }
+    weatherDataFetch(city)
+    event.preventDefault()
 }

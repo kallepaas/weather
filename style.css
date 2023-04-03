@@ -1,0 +1,67 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 1.5em;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #191970;
+}
+
+.city {
+    font-size: 3em;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.city-desc {
+    font-size: 1.5em;
+}
+
+
+.vorm {
+    margin-top: 20px;
+}
+
+.nupp {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ylemine {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+.ylemine-colors {
+    padding: 10px;
+    background-color: #87CEFA;
+}
+
+.alumine {
+    padding-top: 20px;
+    background-color: #87CEFA;
+    max-width: 400px;
+}
